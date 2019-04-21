@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Trucks = props => (
-  <ul>
+  <ul className="HomeList">
     {props.trucks.map(truck => (
       <li>{truck}</li>
     ))}

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import HomePageView from './HomeView.js'
 import Trucks from './TruckModel.js'
+import './Home.css'
 
 class HomePageControl extends Component {
   constructor(props) {
@@ -15,10 +16,11 @@ class HomePageControl extends Component {
   }
   render() {
     return (
-      <div>
-        <HomePageView title="This is the title" description="I love long descriptions, but for this time I won't be giving one." />
+      <React.Fragment>
+        <HomePageView title="This is the title"
+          description="I love long descriptions, but for this time I won't be giving one." />
         <Trucks trucks={this.state.trucks} />
-      </div>
+      </React.Fragment>
     )
   }
 }

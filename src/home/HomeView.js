@@ -4,10 +4,10 @@ import React, { Component } from 'react'
 class HomePageView extends Component {
   render() {
     return (
-      <div>
-        <h1>{this.props.title}</h1>
-        <p>{this.props.description}</p>
-      </div>
+      <React.Fragment>
+        <h1 className="Home-header">{this.props.title}</h1>
+        <p className="Home-parragraph">{this.props.description}</p>
+      </React.Fragment>
     )
   }
 }
